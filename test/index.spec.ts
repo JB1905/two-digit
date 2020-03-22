@@ -1,7 +1,9 @@
 import twoDigit from '../src';
 
 describe('one-digit number', () => {
-  const value = twoDigit(5);
+  const input = 5;
+
+  const value = twoDigit(input);
 
   it('should return string with two-digit', () => {
     expect(value).toBe('05');
@@ -9,15 +11,19 @@ describe('one-digit number', () => {
 });
 
 describe('two-digit number', () => {
-  const value = twoDigit(15);
+  const input = 15;
+
+  const value = twoDigit(input);
 
   it('should return number with two-digit', () => {
-    expect(value).toBe(15);
+    expect(value).toBe(input);
   });
 });
 
 describe('floating point number', () => {
-  const value = twoDigit(3.14);
+  const input = 3.14;
+
+  const value = twoDigit(input);
 
   it('should return string with two-digit for floating point number', () => {
     expect(value).toBe('03.14');
@@ -25,15 +31,19 @@ describe('floating point number', () => {
 });
 
 describe('three-digit number', () => {
-  const value = twoDigit(120);
+  const input = 120;
+
+  const value = twoDigit(input);
 
   it('should return number with three-digit', () => {
-    expect(value).toBe(120);
+    expect(value).toBe(input);
   });
 });
 
 describe('one-digit string', () => {
-  const value = twoDigit('2');
+  const input = '2';
+
+  const value = twoDigit(input);
 
   it('should return string with two-digit', () => {
     expect(value).toBe('02');
@@ -41,34 +51,42 @@ describe('one-digit string', () => {
 });
 
 describe('two-digit string', () => {
-  const value = twoDigit('10');
+  const input = '10';
+
+  const value = twoDigit(input);
 
   it('should return string with two-digit', () => {
-    expect(value).toBe('10');
+    expect(value).toBe(input);
   });
 });
 
 describe('three-digit string', () => {
-  const value = twoDigit('204');
+  const input = '204';
+
+  const value = twoDigit(input);
 
   it('should return string with three-digit', () => {
-    expect(value).toBe('204');
+    expect(value).toBe(input);
   });
 });
 
 describe('negative number', () => {
-  const value = twoDigit(-1);
+  const input = -1;
+
+  const value = twoDigit(input);
 
   it('should return inputed value', () => {
-    expect(value).toBe(-1);
+    expect(value).toBe(input);
   });
 });
 
 describe('letter input', () => {
-  const value = twoDigit('J');
+  const input = 'J';
+
+  const value = twoDigit(input);
 
   it('should return inputed value', () => {
-    expect(value).toBe('J');
+    expect(value).toBe(input);
   });
 });
 
@@ -98,6 +116,6 @@ describe('Infinity value', () => {
   const value = twoDigit(input);
 
   it('should return inputed value', () => {
-    expect(value).toBe(Infinity);
+    expect(value).toBe(input);
   });
 });
