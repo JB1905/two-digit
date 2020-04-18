@@ -1,4 +1,4 @@
-const twoDigit = (value: any) => {
+const twoDigit = <T extends string | number>(value: T) => {
   if (typeof value === 'string') {
     if (Number(value).toString() === value) {
       return value.length === 1 ? `0${value}` : value;
