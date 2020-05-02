@@ -1,4 +1,8 @@
-const twoDigit = (value: any) => {
+function twoDigit(value: string): string;
+function twoDigit(value: number): number | string;
+function twoDigit<T>(value: T): T;
+
+function twoDigit(value: any) {
   if (typeof value === 'string') {
     if (Number(value).toString() === value) {
       return value.length === 1 ? `0${value}` : value;
@@ -10,6 +14,6 @@ const twoDigit = (value: any) => {
   } else {
     return value;
   }
-};
+}
 
 export default twoDigit;
