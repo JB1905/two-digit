@@ -15,7 +15,7 @@ describe('twoDigit', () => {
     ${'Hello World!'}   | ${'Hello World!'}
     ${{ name: 'John' }} | ${{ name: 'John' }}
     ${Infinity}         | ${Infinity}
-  `('sholud convert $input to $expected', ({ input, expected }) => {
+  `('should convert $input to $expected', ({ input, expected }) => {
     const value = twoDigit(input);
 
     expect(value).toStrictEqual(expected);
