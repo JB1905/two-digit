@@ -1,6 +1,6 @@
 {
   "name": "two-digit",
-  "version": "0.0.0-development",
+  "version": "1.1.0",
   "description": "Format the number to two digits",
   "author": "Jakub Biesiada",
   "license": "MIT",
@@ -8,14 +8,15 @@
   "module": "lib/two-digit.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "//": "rimraf lib/* && npm run prettier && npm run lint && npm run build",
+    "prepack": "npm run clean && npm run prettier && npm run lint && npm run build",
+    "clean": "rimraf lib/*",
     "build": "rollup -c",
     "test": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "npm run test -- --watch",
     "lint": "eslint 'src/**/*.ts' --fix",
     "prettier": "prettier --write 'src/**/*.ts'",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
