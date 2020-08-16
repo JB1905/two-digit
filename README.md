@@ -45,11 +45,25 @@ Next use library:
 const formattedValue = twoDigit(/* value */);
 ```
 
+Example results for different data:
+
+```js
+twoDigit(1); // '01'
+twoDigit(10); // 10
+twoDigit(1000); // 1000
+twoDigit('5'); // '05'
+twoDigit('05'); // '05'
+twoDigit('500'); // '500'
+twoDigit('A'); // 'A'
+twoDigit(Infinity); // Infinity
+twoDigit(null); // null
+```
+
 ### Params
 
-| Type             | Description           |
-| ---------------- | --------------------- |
-| string or number | value to be formatted |
+| Type                                                                                               | Description           |
+| -------------------------------------------------------------------------------------------------- | --------------------- |
+| string or number (if a value of a different type is passed, the function returns the value passed) | value to be formatted |
 
 ## License
 
