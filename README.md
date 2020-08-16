@@ -45,6 +45,14 @@ Next use library:
 const formattedValue = twoDigit(/* value */);
 ```
 
+### Params
+
+| Type                                                                                               | Description           |
+| -------------------------------------------------------------------------------------------------- | --------------------- |
+| string or number (if a value of a different type is passed, the function returns the value passed) | value to be formatted |
+
+### Example
+
 Example results for different data:
 
 ```js
@@ -58,12 +66,6 @@ twoDigit('A'); // 'A'
 twoDigit(Infinity); // Infinity
 twoDigit(null); // null
 ```
-
-### Params
-
-| Type                                                                                               | Description           |
-| -------------------------------------------------------------------------------------------------- | --------------------- |
-| string or number (if a value of a different type is passed, the function returns the value passed) | value to be formatted |
 
 ## License
 
