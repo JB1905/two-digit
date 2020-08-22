@@ -13,7 +13,7 @@ Format the number to two digits
 
 ### Alternatives
 
-- [double-digit](https://github.com/omrilotan/mono/tree/master/packages/double-digit#readme) by [omrilotan](https://github.com/omrilotan/)
+- [double-digit](https://github.com/omrilotan/mono/tree/master/packages/double-digit/) by [omrilotan](https://github.com/omrilotan/)
 - [ddday](https://github.com/thodorisbais/ddday/) by [Thodoris Bais](https://github.com/thodorisbais/)
 
 ## How to Install
