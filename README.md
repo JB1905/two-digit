@@ -61,19 +61,26 @@ const formattedValue = twoDigit(/* value */);
 Example results for different data:
 
 ```js
-twoDigit(1); // '01'
-twoDigit(10); // 10
-twoDigit(1000); // 1000
-twoDigit('5'); // '05'
-twoDigit('05'); // '05'
-twoDigit('500'); // '500'
+twoDigit(5); // '05'
+twoDigit(15); // 15
+twoDigit(120); // 120
+twoDigit(2.51); // '02.51'
+twoDigit(Math.PI); // '03.141592653589793'
+twoDigit(-1); // -1
+twoDigit('2'); // '02'
+twoDigit('04'); // '04'
+twoDigit('10'); // '10'
+twoDigit('204'); // '204'
+twoDigit('2.1.3'); // '2.1.3'
 twoDigit(0b111); // '07'
 twoDigit(0b1100); // 0b1100 (12 decimal)
 twoDigit(0o5); // '05'
 twoDigit(0o12); // 0o12 (10 decimal)
 twoDigit(0x8); // '08'
 twoDigit(0xf2); // 0xf2 (242 decimal)
-twoDigit('A'); // 'A'
+twoDigit('J'); // 'J'
+twoDigit('Hello World!'); // 'Hello World!'
+twoDigit({ name: 'John' }); // { name: 'John' }
 twoDigit(Infinity); // Infinity
 twoDigit(null); // null
 ```
