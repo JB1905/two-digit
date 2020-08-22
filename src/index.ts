@@ -1,14 +1,4 @@
-const formatString = (value: string) => {
-  if (Number(value).toString() === value) {
-    return value.length === 1 ? `0${value}` : value;
-  }
-
-  return value;
-};
-
-const formatNumber = (value: number) => {
-  return value >= 0 && value < 10 ? `0${value}` : value;
-};
+import { formatString, formatNumber } from './helpers';
 
 function twoDigit(value: string): string;
 function twoDigit(value: number): number | string;
