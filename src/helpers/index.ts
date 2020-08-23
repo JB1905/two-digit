@@ -1,2 +1,2 @@
-export { formatString } from './formatString';
-export { formatNumber } from './formatNumber';
+export { checkString } from './checkString';
+export { checkNumber } from './checkNumber';
