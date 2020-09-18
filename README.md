@@ -1,4 +1,4 @@
-# [two-digit](https://github.com/jb1905/two-digit)
+# [two-digit](https://github.com/JB1905/two-digit)
 
 [![NPM version](http://img.shields.io/npm/v/two-digit?style=flat-square)](https://www.npmjs.com/package/two-digit)
 [![NPM downloads](http://img.shields.io/npm/dm/two-digit?style=flat-square)](https://www.npmjs.com/package/two-digit)
