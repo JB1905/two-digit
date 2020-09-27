@@ -73,11 +73,11 @@ twoDigit('10'); // '10'
 twoDigit('204'); // '204'
 twoDigit('2.1.3'); // '2.1.3'
 twoDigit(0b111); // '07'
-twoDigit(0b1100); // 0b1100 (12 decimal)
+twoDigit(0b1100); // '12'
 twoDigit(0o5); // '05'
-twoDigit(0o12); // 0o12 (10 decimal)
+twoDigit(0o12); // '10'
 twoDigit(0x8); // '08'
-twoDigit(0xf2); // 0xf2 (242 decimal)
+twoDigit(0xf2); // '242'
 twoDigit('J'); // 'J'
 twoDigit('Hello World!'); // 'Hello World!'
 twoDigit({ name: 'John' }); // { name: 'John' }
