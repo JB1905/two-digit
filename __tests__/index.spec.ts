@@ -4,11 +4,11 @@ describe('twoDigit', () => {
   it.each`
     input               | expected
     ${5}                | ${'05'}
-    ${15}               | ${15}
-    ${120}              | ${120}
+    ${15}               | ${'15'}
+    ${120}              | ${'120'}
     ${2.51}             | ${'02.51'}
     ${Math.PI}          | ${'03.141592653589793'}
-    ${-1}               | ${-1}
+    ${-1}               | ${'-1'}
     ${'2'}              | ${'02'}
     ${'04'}             | ${'04'}
     ${'10'}             | ${'10'}
@@ -23,7 +23,7 @@ describe('twoDigit', () => {
     ${'J'}              | ${'J'}
     ${'Hello World!'}   | ${'Hello World!'}
     ${{ name: 'John' }} | ${{ name: 'John' }}
-    ${Infinity}         | ${Infinity}
+    ${Infinity}         | ${'Infinity'}
     ${null}             | ${null}
   `('should convert $input to $expected', ({ input, expected }) => {
     const value = twoDigit(input);
