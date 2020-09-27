@@ -62,11 +62,11 @@ Example results for different data:
 
 ```js
 twoDigit(5); // '05'
-twoDigit(15); // 15
-twoDigit(120); // 120
+twoDigit(15); // '15'
+twoDigit(120); // '120'
 twoDigit(2.51); // '02.51'
 twoDigit(Math.PI); // '03.141592653589793'
-twoDigit(-1); // -1
+twoDigit(-1); // '-1'
 twoDigit('2'); // '02'
 twoDigit('04'); // '04'
 twoDigit('10'); // '10'
@@ -81,7 +81,7 @@ twoDigit(0xf2); // 0xf2 (242 decimal)
 twoDigit('J'); // 'J'
 twoDigit('Hello World!'); // 'Hello World!'
 twoDigit({ name: 'John' }); // { name: 'John' }
-twoDigit(Infinity); // Infinity
+twoDigit(Infinity); // 'Infinity'
 twoDigit(null); // null
 ```
 
