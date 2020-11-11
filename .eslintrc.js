@@ -15,6 +15,7 @@ module.exports = {
     },
   },
   rules: {
-    'no-unused-vars': ['off'],
+    'no-redeclare': 'off',
+    'no-unused-vars': 'off',
   },
 };

@@ -1,4 +1,18 @@
-import { checkString, checkNumber } from './helpers';
+const formatValue = (condition: boolean, value: string | number) => {
+  return condition ? `0${value}` : value;
+};
+
+const checkString = (value: string) => {
+  if (Number(value).toString() === value) {
+    return formatValue(value.length === 1, value);
+  }
+
+  return value;
+};
+
+const checkNumber = (value: number) => {
+  return formatValue(value >= 0 && value < 10, value);
+};
 
 function twoDigit(value: string): string;
 function twoDigit(value: number): number | string;
