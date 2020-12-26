@@ -1,5 +1,5 @@
-const formatValue = (condition: boolean, value: string | number) => {
-  return condition ? `0${value}` : value;
+const formatValue = (isSingleDigit: boolean, value: string | number) => {
+  return isSingleDigit ? `0${value}` : value;
 };
 
 const checkString = (value: string) => {
