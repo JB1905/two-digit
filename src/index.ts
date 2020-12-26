@@ -1,17 +1,17 @@
-const formatValue = (isSingleDigit: boolean, value: string | number) => {
+const formatValue = (value: string | number, isSingleDigit: boolean) => {
   return isSingleDigit ? `0${value}` : value;
 };
 
 const checkString = (value: string) => {
   if (Number(value).toString() === value) {
-    return formatValue(value.length === 1, value);
+    return formatValue(value, value.length === 1);
   }
 
   return value;
 };
 
 const checkNumber = (value: number) => {
-  return formatValue(value >= 0 && value < 10, value);
+  return formatValue(value, value >= 0 && value < 10);
 };
 
 function twoDigit(value: string): string;
