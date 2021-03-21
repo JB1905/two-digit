@@ -21,7 +21,9 @@ function twoDigit<T>(value: T): T;
 function twoDigit(value: any) {
   if (typeof value === 'string') {
     return checkString(value);
-  } else if (typeof value === 'number') {
+  }
+
+  if (typeof value === 'number') {
     return checkNumber(value);
   }
 
