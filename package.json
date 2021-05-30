@@ -24,10 +24,10 @@
     "url": "https://github.com/JB1905/two-digit.git"
   },
   "keywords": [
-    "format",
     "string",
-    "number",
+    "format",
     "value",
+    "number",
     "digit"
   ],
   "bugs": {
