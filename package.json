@@ -1,6 +1,6 @@
 {
   "name": "two-digit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Format the number to two digits",
   "author": "Jakub Biesiada",
   "license": "MIT",
