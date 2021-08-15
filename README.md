@@ -32,7 +32,7 @@ $ yarn add two-digit
 
 ## Getting Started
 
-**Connect libary to project using ES6 import:**
+**Connect the library to the project with ES6 import:**
 
 ```js
 import twoDigit from 'two-digit';
