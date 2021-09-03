@@ -4,7 +4,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/two-digit?style=flat-square)](https://www.npmjs.com/package/two-digit)
 [![NPM license](https://img.shields.io/npm/l/two-digit?style=flat-square)](https://www.npmjs.com/package/two-digit)
 [![Codecov](https://img.shields.io/codecov/c/github/JB1905/two-digit?style=flat-square)](https://codecov.io/gh/JB1905/two-digit)
-[![Travis](https://img.shields.io/travis/com/JB1905/two-digit/main?style=flat-square)](https://travis-ci.com/JB1905/two-digit)
+[![Travis](https://img.shields.io/travis/com/JB1905/two-digit/main?style=flat-square)](https://app.travis-ci.com/github/JB1905/two-digit)
 [![Bundle size](https://img.shields.io/bundlephobia/min/two-digit?style=flat-square)](https://bundlephobia.com/result?p=two-digit)
 
 ## About
