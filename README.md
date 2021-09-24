@@ -54,7 +54,7 @@ const formattedValue = twoDigit(/* value */);
 
 | Type                                                                                               | Description           |
 | -------------------------------------------------------------------------------------------------- | --------------------- |
-| string or number (if a value of a different type is passed, the function returns the value passed) | value to be formatted |
+| string or number (if a value of a different type is passed, the function returns the value passed) | Value to be formatted |
 
 ## Example
 

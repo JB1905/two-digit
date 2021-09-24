@@ -10,7 +10,7 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      exports: 'default',
+      exports: 'default', // TODO
       sourcemap: true,
     },
     {
@@ -20,4 +20,5 @@ export default {
     },
   ],
   plugins: [resolve(), typescript(), terser()],
+  // TODO? excluded
 };
