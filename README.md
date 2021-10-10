@@ -44,7 +44,7 @@ import twoDigit from 'two-digit';
 const twoDigit = require('two-digit');
 ```
 
-Next use library:
+Next use the library:
 
 ```js
 const formattedValue = twoDigit(/* value */);
